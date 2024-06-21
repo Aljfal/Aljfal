@@ -1,0 +1,84 @@
+.dropmenu1 {
+    width: 20%;
+  margin : 40px auto; 
+}
+
+.dropheadb p {
+  padding : 10px;
+  background : #2d2f31; 
+  color : white;
+  font-size : 1.2em;
+  cursor : pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropheadb p::after {
+  content: "+";
+}
+
+.slideb {
+    height: 0px;
+    position: absolute;
+    z-index: 11551;
+    background-color: #d9d9d9;
+    transition: all 0.4s ease-in;
+    width: 20%;
+    overflow:scroll;
+  }
+  
+  .slideb.open {
+    height: 250px;
+  }
+  .dropheadb.open p::after {
+    content: "-";
+
+  }
+.slideb li {padding : 15px; width: 100%;
+    transition: all 0.4s ease-in;
+}
+.slideb li:hover {background-color: #626262;
+color: white;
+
+}
+
+
+
+.dropheadk p {
+padding : 10px;
+background : #2d2f31; 
+color : white;
+font-size : 1.2em;
+cursor : pointer;
+display: flex;
+justify-content: space-between;
+}
+
+.dropheadk p::after {
+content: "+";
+}
+
+.slidek {
+  height: 0px;
+  position: absolute;
+  z-index: 11551;
+  background-color: #d9d9d9;
+  transition: all 0.4s ease-in;
+  width: 20%;
+  overflow:scroll;
+}
+
+.slidek.open {
+  height: 250px;
+}
+.dropheadk.open p::after {
+  content: "-";
+
+}
+.slidek li {padding : 15px; width: 100%;
+  transition: all 0.4s ease-in;
+}
+.slidek li:hover {background-color: #626262;
+color: white;
+
+}
