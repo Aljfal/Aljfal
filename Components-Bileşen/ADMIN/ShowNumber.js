@@ -1,15 +1,30 @@
 import {useState } from "react";
-export default function ShowType({  onChange ,sele})
+export default function ShowNumber({  onChange ,sele})
 {
-  const ReservationsType = [
+  const ReservationsHuman = [
     {
-      type: "Seç",
+      type: "choose",
     },
     {
-      type: "VIP",
+      type: 1,
     },
     {
-      type: "Economy",
+      type: 2,
+    },
+    {
+      type: 3,
+    },
+    {
+      type: 4,
+    },
+    {
+      type: 5,
+    },
+    {
+      type: 6,
+    },
+    {
+      type: "Party",
     },
    
   ];
@@ -17,7 +32,7 @@ export default function ShowType({  onChange ,sele})
   const [selectedItem, setSelectedItem] = useState(sele ? sele : "Seç");
   const handleSelectChange = (event) => {
     const selectedItemIndex = event.target.value;
-    setSelectedItem(ReservationsType[selectedItemIndex]);
+    setSelectedItem(selectedItemIndex);
     onChange(selectedItemIndex);
   };
   return (
@@ -25,7 +40,7 @@ export default function ShowType({  onChange ,sele})
     <div  className="p-6 bg-[#2a4180] rounded-full">
       <select value={selectedItem} onChange={handleSelectChange}   className="bg-[#2a4180] text-white w-full">
         {
-        ReservationsType.map((item,index) => (
+        ReservationsHuman.map((item,index) => (
           <option key={index} value={item.type} className="  text-3xl ">
             {item.type}
           </option>
