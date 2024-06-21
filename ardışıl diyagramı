@@ -75,3 +75,45 @@
   |               |  Değerlendirmeleri   |<-------------+
   |               |  Analiz Etme         |              |
   |               +----------------------+
+# not:fotograf ekleyemedim.
+@startuml
+
+actor Müşteri
+actor RestoranYöneticisi as "Restoran Yöneticisi"
+actor Personel
+
+rectangle "Sistem" {
+  usecase "Rezervasyon Yapma" as UC1
+  usecase "Rezervasyon Onaylama ve Yönetme" as UC2
+  usecase "Rezervasyon Hatırlatması Gönderme" as UC3
+  usecase "Personel Bilgilerini Kaydetme ve Güncelleme" as UC4
+  usecase "Vardiya ve Çalışma Saatlerini Planlama" as UC5
+  usecase "Personel Performansını Değerlendirme" as UC6
+  usecase "Restoran Bilgilerini Yönetme" as UC7
+  usecase "Menü Oluşturma ve Güncelleme" as UC8
+  usecase "Yemek Detaylarını Yönetme" as UC9
+  usecase "Günün Özel Yemeklerini Tanıtma" as UC10
+  usecase "Müşteri Değerlendirmesi Yapma" as UC11
+  usecase "Değerlendirmeleri Analiz Etme" as UC12
+}
+
+Müşteri --> UC1
+Müşteri --> UC11
+
+RestoranYöneticisi --> UC2
+RestoranYöneticisi --> UC3
+RestoranYöneticisi --> UC4
+RestoranYöneticisi --> UC5
+RestoranYöneticisi --> UC6
+RestoranYöneticisi --> UC7
+RestoranYöneticisi --> UC8
+RestoranYöneticisi --> UC9
+RestoranYöneticisi --> UC10
+RestoranYöneticisi --> UC12
+
+Personel --> UC5
+Personel --> UC6
+
+@enduml
+
+works in plantuml format draw.io
