@@ -1,5 +1,5 @@
 ## Giris:
- Bu proje, restoran yönetimi web siteleri ve mobil üzerine odaklanmaktadır.
+ Bu proje, restoran yönetimi web siteleri üzerine odaklanmaktadır.
  Proje, restoran rezervasyonu, personel yönetimi, restoran bilgileri yönetimi, yemek yönetimi ve müşteri değerlendirmeleri gibi çeşitli işlevleri içermektedir.
  Bu kapsamlı proje, restoran işletmecilerinin işlerini daha verimli ve organize bir şekilde yönetmelerine yardımcı olmayı amaçlamaktadır.
 OpenTable ve ResDiary gibi olacak.
